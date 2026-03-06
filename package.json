@@ -1,0 +1,14 @@
+{
+  "name": "jitterbit-order-api",
+  "version": "1.0.0",
+  "description": "Node.js API for order management - Jitterbit technical test",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1"
+  }
+}
