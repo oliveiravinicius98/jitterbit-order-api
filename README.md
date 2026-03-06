@@ -2,20 +2,40 @@
 
 Simple Node.js API developed for the Jitterbit technical test.
 
-## Features
-- Create orders
-- Get order by ID
-- List orders
-- Update orders
-- Delete orders
+## Overview
+
+This project is a REST API for order management, supporting CRUD operations and JSON field mapping before saving data into the database.
 
 ## Technologies
+
 - Node.js
 - Express
-- MongoDB / SQL (depending on implementation)
+- MongoDB
+- Mongoose
 
-## Example Order JSON
+## Endpoints
 
+### Create order
+POST `/order`
+
+### Get order by ID
+GET `/order/:id`
+
+Example:
+GET `/order/v10089016vdb`
+
+### List all orders
+GET `/order/list`
+
+### Update order
+PUT `/order/:id`
+
+### Delete order
+DELETE `/order/:id`
+
+## Input JSON
+
+```json
 {
   "numeroPedido": "v10089015vdb-01",
   "valorTotal": 10000,
